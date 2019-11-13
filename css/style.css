@@ -9,7 +9,9 @@ nav {
     width: 100vw;
     background: #801336;
     overflow: hidden;
+    border: none;
 }
+
 nav .navigacija{
     position: relative;
     display: inline-block;
@@ -29,17 +31,18 @@ nav img {
 nav ul {
     list-style: none;
 }
-li {
+
+nav ul li {
     display: inline;
-    padding: 4em 2em;
-    line-height: 4.3em;
+    padding: 1.5em 2em;
+    float: left;
 }
 
 nav ul li:hover{
     background-color: #EE4540;
 }
 
-nav ul li a{
+nav ul a{
     text-decoration: none;
     color: white;
 }
@@ -49,7 +52,7 @@ nav ul li a{
 
 main {
     width: 100vw;
-    height: 50vh;
+    height: 150vh;
     background: #2D132C;
 }
 
