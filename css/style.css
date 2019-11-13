@@ -1,12 +1,77 @@
-/* Pozadina */
+* {
+    margin: 0;
+    padding: 0;
+    font: 'Roboto Condensed', sans-serif;
+}
+
+nav {
+    position: fixed;
+    width: 100vw;
+    background: #801336;
+    overflow: hidden;
+}
+nav .navigacija{
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+nav img {
+    border-radius: 50%;
+    display: inline-flex;
+    width: 3em;
+    height: 3em;
+    float: right;
+    padding: 0.5em;
+}
+
+nav ul {
+    list-style: none;
+}
+li {
+    display: inline;
+    padding: 4em 2em;
+    line-height: 4.3em;
+}
+
+nav ul li:hover{
+    background-color: #EE4540;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+.active {
+    background-color: #EE4540;
+}
+
+main {
+    width: 100vw;
+    height: 50vh;
+    background: #2D132C;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    text-align: center;
+    font-size: 1em;
+    color: #FFFFFF;
+    background-color: #EE4540;
+    padding: 2em;
+}
+
+
+
+/* Home btn */
 
 position: absolute;
-width: 1920px;
-height: 1368px;
-left: 0px;
-top: 0px;
-
-background: #2D132C;
+width: 200px;
+height: 110px;
 
 
 /* Slajder pozadina */
@@ -70,50 +135,6 @@ align-items: center;
 
 color: #EE4540;
 
-
-
-/* Mika movies Created by: Miloš Janković & Luka Đurđević All rights reserved ©, 2019 */
-
-position: absolute;
-width: 500px;
-height: 188px;
-left: 710px;
-top: 1413px;
-
-font-family: Roboto Condensed;
-font-style: normal;
-font-weight: normal;
-font-size: 40px;
-line-height: 53px;
-display: flex;
-align-items: center;
-text-align: center;
-
-color: #FFFFFF;
-
-
-
-/* Rectangle 2 */
-
-position: absolute;
-width: 1920px;
-height: 110px;
-left: 0px;
-top: 0px;
-
-background: #801336;
-
-
-/* Home btn */
-
-position: absolute;
-width: 200px;
-height: 110px;
-left: 610px;
-top: 0px;
-
-
-
 /* Prikazuje se btn */
 
 position: absolute;
@@ -144,3 +165,4 @@ top: 15px;
 
 background: url(IGGY8591.jpg), #C4C4C4;
 border: 7px solid #801336;
+
