@@ -1,0 +1,146 @@
+/* Pozadina */
+
+position: absolute;
+width: 1920px;
+height: 1368px;
+left: 0px;
+top: 0px;
+
+background: #2D132C;
+
+
+/* Slajder pozadina */
+
+position: absolute;
+width: 1920px;
+height: 340px;
+left: 0px;
+top: 512px;
+
+background: #801336;
+
+
+/* Group 1 */
+
+position: absolute;
+width: 1870px;
+height: 250px;
+left: 24px;
+top: 557px;
+
+
+
+/* Group 2 */
+
+position: absolute;
+width: 1870px;
+height: 250px;
+left: 25px;
+top: 985px;
+
+box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.25);
+
+
+/* Rectangle 1 */
+
+position: absolute;
+width: 1920px;
+height: 294px;
+left: 0px;
+top: 1368px;
+
+background: #EE4540;
+
+
+/* Dobrodošli u ... bioskop */
+
+position: absolute;
+width: 338px;
+height: 42px;
+left: 231px;
+top: 257px;
+
+font-family: Roboto Condensed;
+font-style: normal;
+font-weight: normal;
+font-size: 36px;
+line-height: 47px;
+display: flex;
+align-items: center;
+
+color: #EE4540;
+
+
+
+/* Mika movies Created by: Miloš Janković & Luka Đurđević All rights reserved ©, 2019 */
+
+position: absolute;
+width: 500px;
+height: 188px;
+left: 710px;
+top: 1413px;
+
+font-family: Roboto Condensed;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 53px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+
+/* Rectangle 2 */
+
+position: absolute;
+width: 1920px;
+height: 110px;
+left: 0px;
+top: 0px;
+
+background: #801336;
+
+
+/* Home btn */
+
+position: absolute;
+width: 200px;
+height: 110px;
+left: 610px;
+top: 0px;
+
+
+
+/* Prikazuje se btn */
+
+position: absolute;
+width: 200px;
+height: 110px;
+left: 860px;
+top: 0px;
+
+
+
+/* Uskoro btn */
+
+position: absolute;
+width: 200px;
+height: 110px;
+left: 1110px;
+top: 0px;
+
+
+
+/* Profil btn */
+
+position: absolute;
+width: 80px;
+height: 80px;
+left: 1800px;
+top: 15px;
+
+background: url(IGGY8591.jpg), #C4C4C4;
+border: 7px solid #801336;
