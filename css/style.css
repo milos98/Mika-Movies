@@ -69,12 +69,11 @@ main .dobrodosli {
     padding: 0 10vw;
 }
 
-main .filmovi {
+main#filmovi {
     display: flex;
-    flex-wrap: nowrap !important;
 }
 
-img  {
+main img {
     height: 375px;
     width: 250px;
 }

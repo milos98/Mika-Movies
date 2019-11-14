@@ -28,10 +28,10 @@ $('document').ready(function () {
       const randBoja = `rgba(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},0.9)`;
       el.style.backgroundcolor = randBoja;
     }
-    $('.filmovi').slick({
+    $('#filmovi').slick({
       centerMode: true,
       centerPadding: '60px',
-      slidesToShow: 3,
+      slidesToShow: 5,
       responsive: [
         {
           breakpoint: 768,
@@ -58,36 +58,3 @@ $('document').ready(function () {
 
   getInformation(comingSoonIMDB);
 })
-
-/*$.getJSON('https://rickandmortyapi.com/api/character/[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]', function (data) {
-  console.log(data);
-})
-  /*function(data){
-    console.log(data);
-    createCharacter(data);
-})
-$('#filmovi').slick({
-  centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
-});*/
