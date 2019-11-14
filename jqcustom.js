@@ -21,15 +21,17 @@ $('document').ready(function () {
               dots: true,
               centerPadding: '60px',
               slidesToShow: 5,
+              swipeToSlide: true,
               appendArrows: $('.row'),
               responsive: [
                 {
-                  breakpoint: 768,
+                  breakpoint: 1000,
                   settings: {
                     arrows: true,
                     centerMode: true,
                     centerPadding: '40px',
-                    slidesToShow: 3
+                    swipeToSlide: true,
+                    slidesToShow: 1
                   }
                 },
                 {
@@ -38,6 +40,7 @@ $('document').ready(function () {
                     arrows: false,
                     centerMode: true,
                     centerPadding: '40px',
+                    swipeToSlide: true,
                     slidesToShow: 1
                   }
                 }
