@@ -3,8 +3,6 @@ $('document').ready(function () {
   var charData = [];
   var nowInTheater = ['']
   var comingSoonIMDB = ['tt4520988', 'tt3224458', 'tt8688634', 'tt9071322', 'tt10703826',
-    'tt8106572', 'tt9358256', 'tt8946378', 'tt8722346',
-    'tt4520988', 'tt3224458', 'tt8688634', 'tt9071322', 'tt10703826',
     'tt8106572', 'tt9358256', 'tt8946378', 'tt8722346']
 
   function getInformation(listaIMDBkodova) {
@@ -16,34 +14,33 @@ $('document').ready(function () {
           createCharacter(el);
         })
         .then(function (el) {
-          if(charData.length === comingSoonIMDB.length){
-            
-          $('.row').slick({
-            centerMode: true,
-            centerPadding: '60px',
-            slidesToShow: 5,
-            responsive: [
-              {
-                breakpoint: 768,
-                settings: {
-                  arrows: true,
-                  centerMode: true,
-                  centerPadding: '40px',
-                  slidesToShow: 3
+          if (charData.length === comingSoonIMDB.length) {
+            $('.row').slick({
+              centerMode: true,
+              dots: true,
+              centerPadding: '60px',
+              slidesToShow: 5,
+              responsive: [
+                {
+                  breakpoint: 768,
+                  settings: {
+                    arrows: true,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 3
+                  }
+                },
+                {
+                  breakpoint: 480,
+                  settings: {
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '40px',
+                    slidesToShow: 1
+                  }
                 }
-              },
-              {
-                breakpoint: 480,
-                settings: {
-                  arrows: false,
-                  centerMode: true,
-                  centerPadding: '40px',
-                  slidesToShow: 1
-                }
-              }
-            ]
-          })
-        
+              ]
+            })
           }
         })
     });

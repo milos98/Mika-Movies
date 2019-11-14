@@ -2,7 +2,14 @@
     margin: 0;
     padding: 0;
     font: 'Roboto Condensed', sans-serif;
-    overflow-x: hidden;
+}
+
+.active {
+    background-color: #EE4540;
+}
+
+.hide {
+    display: none;
 }
 
 nav {
@@ -48,19 +55,15 @@ nav ul a{
     text-decoration: none;
     color: white;
 }
-.active {
-    background-color: #EE4540;
-}
 
 main {
-    width: 100vw;
-    height: 150vh;
+    width: 100%;
     background: #2D132C;
-    overflow-y: hidden;
 }
 
 main .dobrodosli {
     height: 40vh;
+    max-width: 100%;
     background-image: url(/img/cinema-bg.jpg);
     background-position: cover;
     color: white;
@@ -71,15 +74,34 @@ main .dobrodosli {
 
 main #filmovi {
     padding:0 15vw;
+    display: flex;
+
 }
 
 main img {
     height: 375px;
     width: 250px;
+    flex: 10;
 }
 
 div .charElement {
     display: inline-block !important;
+}
+
+.slick-prev {
+    position: absolute;
+    color: white;
+    left: 0 !important;
+    flex: 1;
+}
+
+.slick-next {
+    right: 0 !important;
+    flex: 1;
+}
+
+.slick-dots {
+    left: 0;
 }
 
 footer {
