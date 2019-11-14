@@ -6,7 +6,7 @@
 }
 
 nav {
-    position: relative;
+    position: absolute;
     top: 0;
     width: 100%;
     background: #801336;
@@ -62,18 +62,20 @@ main .dobrodosli {
     height: 40vh;
     background-image: url(/img/cinema-bg.jpg);
     background-position: cover;
-}
-
-main .dobrodosli {
     color: white;
     display: flex;
     align-items: center;
     padding: 0 10vw;
 }
 
-img .img-fluid {
-    position: absolute;
-    height: 100%;
+main .filmovi {
+    display: flex;
+    flex-wrap: nowrap !important;
+}
+
+img  {
+    height: 375px;
+    width: 250px;
 }
 
 div .charElement {
