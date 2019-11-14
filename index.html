@@ -3,12 +3,16 @@
 
 <head>
     <meta charset="UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mika Movies</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <script src="jqcustom.js"></script>
 </head>
 
 <body>
@@ -30,14 +34,15 @@
     </nav>
     <main>
         <div class="dobrodosli">
-            <p>Dobrodošli u ... bioskop</p>
+            <h2>Dobrodošli u ... bioskop</h2>
         </div>
-        <div class="filmovi">
-            <!-- <article><img src="img/akcija/expendables3.jpg" alt=""></article>
-        <article><img src="img/akcija/endgame.jpg" alt=""></article>
-        <article><img src="img/akcija/inception.jpg" alt=""></article>
-        <article><img src="img/akcija/terminator.jpg" alt=""></article> -->
+
+        <div class="row" id="filmovi">
+            <div class="charElement" id="template-element">
+                <img class="img-fluid" src="%char-img-scr%" alt="">
+            </div>
         </div>
+
         <div class="grickalice">
             <!-- <article><img src="img/gricke/kokice.jpg" alt=""></article>
         <article><img src="img/gricke/nachos.jpg" alt=""></article>
@@ -51,6 +56,35 @@
             Miloš Janković & Luka Đurđević <br>
             All rights reserved &#169;, 2019</p>
     </footer>
+
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $('.filmovi').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 3,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+    </script>
 </body>
 
 </html>

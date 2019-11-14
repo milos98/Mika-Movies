@@ -6,10 +6,12 @@
 }
 
 nav {
-    position: fixed;
+    position: relative;
+    top: 0;
     width: 100%;
     background: #801336;
     overflow: hidden;
+    z-index: 10000;
 }
 
 nav .navigacija{
@@ -54,6 +56,28 @@ main {
     width: 100vw;
     height: 150vh;
     background: #2D132C;
+}
+
+main .dobrodosli {
+    height: 40vh;
+    background-image: url(/img/cinema-bg.jpg);
+    background-position: cover;
+}
+
+main .dobrodosli {
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 10vw;
+}
+
+img .img-fluid {
+    position: absolute;
+    height: 100%;
+}
+
+div .charElement {
+    display: inline-block !important;
 }
 
 footer {
