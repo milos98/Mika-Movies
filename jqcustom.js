@@ -10,14 +10,46 @@ $('document').ready(function () {
   function getInformation(listaIMDBkodova) {
     listaIMDBkodova.forEach(function (IMDBcode) {
       fetch(`http://www.omdbapi.com/?apikey=b6e0271a&i=${IMDBcode}`)
-      .then((resp) => resp.json())
-      .then(function(el){
-        createCharacter(el);
-      })
+        .then((resp) => resp.json())
+        .then(function (el) {
+          charData.push(el);
+          createCharacter(el);
+        })
+        .then(function (el) {
+          if(charData.length === comingSoonIMDB.length){
+            
+          $('.row').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 5,
+            responsive: [
+              {
+                breakpoint: 768,
+                settings: {
+                  arrows: true,
+                  centerMode: true,
+                  centerPadding: '40px',
+                  slidesToShow: 3
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  arrows: false,
+                  centerMode: true,
+                  centerPadding: '40px',
+                  slidesToShow: 1
+                }
+              }
+            ]
+          })
+        
+          }
+        })
     });
   }
 
-  const createCharacter = (el) => {
+  function createCharacter(el) {
     var lik = $('.charElement').prop('outerHTML');
     console.log(el);
     let newHTML = lik.replace('template-element', el.imdbID);
@@ -28,32 +60,6 @@ $('document').ready(function () {
       const randBoja = `rgba(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},0.9)`;
       el.style.backgroundcolor = randBoja;
     }
-    $('#filmovi').slick({
-      centerMode: true,
-      centerPadding: '60px',
-      slidesToShow: 5,
-      responsive: [
-        {
-          breakpoint: 768,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 3
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1
-          }
-        }
-      ]
-    });
-      
   }
 
   getInformation(comingSoonIMDB);
