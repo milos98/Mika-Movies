@@ -20,18 +20,21 @@ $('document').ready(function () {
               centerMode: true,
               dots: true,
               centerPadding: '60px',
-              slidesToShow: 5,
+              slidesToShow: 3,
               swipeToSlide: true,
               appendArrows: $('.row'),
+              mobileFirst: true,
+              variableWidth: true,
               responsive: [
                 {
-                  breakpoint: 1000,
+                  breakpoint: 768,
                   settings: {
                     arrows: true,
                     centerMode: true,
                     centerPadding: '40px',
                     swipeToSlide: true,
-                    slidesToShow: 1
+                    variableWidth: true,
+                    slidesToShow: 3
                   }
                 },
                 {
@@ -41,6 +44,7 @@ $('document').ready(function () {
                     centerMode: true,
                     centerPadding: '40px',
                     swipeToSlide: true,
+                    variableWidth: true,
                     slidesToShow: 1
                   }
                 }
