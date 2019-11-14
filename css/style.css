@@ -6,7 +6,7 @@
 }
 
 nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     background: #801336;
@@ -56,6 +56,7 @@ main {
     width: 100vw;
     height: 150vh;
     background: #2D132C;
+    overflow-y: hidden;
 }
 
 main .dobrodosli {
@@ -83,7 +84,7 @@ div .charElement {
 }
 
 footer {
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
     width: 100%;
