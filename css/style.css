@@ -1,3 +1,5 @@
+/* generalni izgled */
+
 * {
     margin: 0;
     padding: 0;
@@ -85,7 +87,7 @@ main #filmovi {
 
 }
 
-main img {
+main .row img {
     height: 375px;
     width: 250px;
     flex-grow: 10;
@@ -111,7 +113,49 @@ footer {
     padding: 2em 0;
 }
 
+/* Za profil stranicu */
 
+main .profilna{
+    border-radius: 50%;
+    display: block;
+    margin-top: 4%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 20%;
+}
+
+.profil{
+    text-align: center;
+}
+
+.mainText{
+    color: white;
+    font-size: 300%;
+}
+
+.underline{
+    color: whitesmoke;
+    font-size: 100%;
+}
+
+.progressBar{
+    text-align: right;
+    padding-right: 1%;
+    color: white;
+    background-color: #801336;
+    margin-left: 10%;
+    margin-right: 10%;
+    position: relative;
+}
+
+.progress{
+    text-align: right;
+    padding-right: 1%;
+    color: white;
+    background-color: #EE4540;
+    margin-left: 10%;
+    margin-right: 30%;
+}
 
 /* Home btn */
 
