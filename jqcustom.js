@@ -15,11 +15,13 @@ $('document').ready(function () {
         })
         .then(function (el) {
           if (charData.length === comingSoonIMDB.length) {
+            
             $('.row').slick({
               centerMode: true,
               dots: true,
               centerPadding: '60px',
               slidesToShow: 5,
+              appendArrows: $('.row'),
               responsive: [
                 {
                   breakpoint: 768,

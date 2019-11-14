@@ -19,6 +19,7 @@ nav {
     background: #801336;
     overflow: hidden;
     z-index: 10000;
+    margin-bottom: -5px !important;
 }
 
 nav .navigacija{
@@ -81,27 +82,31 @@ main #filmovi {
 main img {
     height: 375px;
     width: 250px;
-    flex: 10;
+    flex-grow: 10;
 }
 
 div .charElement {
     display: inline-block !important;
 }
 
-.slick-prev {
+.slick-prev, .slick-next {
     position: absolute;
     color: white;
+    flex-grow: 1;
+}
+
+.slick-prev {
     left: 0 !important;
-    flex: 1;
 }
 
 .slick-next {
     right: 0 !important;
-    flex: 1;
 }
 
 .slick-dots {
     left: 0;
+    background-color: #2D132C;
+    margin: 0;
 }
 
 footer {
