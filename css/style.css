@@ -65,8 +65,8 @@ main {
 main .dobrodosli {
     height: 40vh;
     max-width: 100%;
-    background-image: url(/img/cinema-bg.jpg);
-    background-position: cover;
+    background-image: url(/img/cinema-crop.jpg);
+    background-position: center;
     color: white;
     display: flex;
     align-items: center;
@@ -74,7 +74,7 @@ main .dobrodosli {
 }
 
 main #filmovi {
-    padding:0 15vw;
+    padding-top: 50px;
     display: flex;
 
 }
