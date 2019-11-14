@@ -83,30 +83,14 @@ main img {
     height: 375px;
     width: 250px;
     flex-grow: 10;
+    border-radius: 50px;
 }
 
 div .charElement {
     display: inline-block !important;
-}
+    box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
 
-.slick-prev, .slick-next {
-    position: absolute;
-    color: white;
-    flex-grow: 1;
-}
-
-.slick-prev {
-    left: 0 !important;
-}
-
-.slick-next {
-    right: 0 !important;
-}
-
-.slick-dots {
-    left: 0;
-    background-color: #2D132C;
-    margin: 0;
 }
 
 footer {
