@@ -83,12 +83,14 @@ main .dobrodosli h2{
 
 main #filmovi {
     padding-top: 50px;
+    height: 33em;
     display: flex;
 
 }
 
 main .row img {
-    height: 375px;
+    position: relative;
+    height: 24em;
     width: 250px;
     flex-grow: 10;
     border-radius: 50px;
