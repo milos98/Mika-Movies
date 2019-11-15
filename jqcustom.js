@@ -15,7 +15,6 @@ $('document').ready(function () {
         })
         .then(function (el) {
           if (charData.length === comingSoonIMDB.length) {
-            
             $('.row').slick({
               centerMode: true,
               dots: true,
@@ -56,17 +55,23 @@ $('document').ready(function () {
   }
 
   function createCharacter(el) {
-    var lik = $('.charElement').prop('outerHTML');
-    console.log(el);
-    let newHTML = lik.replace('template-element', el.imdbID);
-    newHTML = newHTML.replace('%char-modal-id%', el.imdbID);
-    newHTML = newHTML.replace('%char-img-scr%', el.Poster);
-    $('#filmovi').append(newHTML);
-    for (let el of $('#portfolio-item-caption')) {
-      const randBoja = `rgba(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},0.9)`;
-      el.style.backgroundcolor = randBoja;
+    var film = $('.charElement').prop('outerHTML');
+    let newHTML = film.replace('template-element', el.imdbID);
+    if (charData.length === (comingSoonIMDB.length - 1)) {
+      document.getElementById('template-element').children[0].src = el.Poster;
+      document.getElementById('template-element').id = el.imdbID;
     }
+    else if (charData.length <= (comingSoonIMDB.length - 1)){
+      newHTML = newHTML.replace('template-element', el.imdbID);
+      newHTML = newHTML.replace('%char-img-scr%', el.Poster);
+      $('#filmovi').append(newHTML);
+    }
+    console.log(charData.length === comingSoonIMDB.length)
+for (let el of $('#portfolio-item-caption')) {
+  const randBoja = `rgba(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},0.9)`;
+  el.style.backgroundcolor = randBoja;
+}
   }
 
-  getInformation(comingSoonIMDB);
+getInformation(comingSoonIMDB);
 })
