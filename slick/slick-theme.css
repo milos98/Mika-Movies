@@ -80,6 +80,7 @@
 .slick-prev
 {
     left: 0;
+    z-index: 1000;
 }
 [dir='rtl'] .slick-prev
 {
@@ -128,7 +129,7 @@
     display: block;
 
     width: 100%;
-    padding: 20px;
+    padding-bottom: 2em;;
     margin: 0;
 
     list-style: none;
