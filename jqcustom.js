@@ -57,7 +57,7 @@ $('document').ready(function () {
   function createCharacter(el) {
     var film = $('.charElement').prop('outerHTML');
     let newHTML = film.replace('template-element', el.imdbID);
-    if (charData.length === (comingSoonIMDB.length - 1)) {
+    if (charData.length === comingSoonIMDB.length) {
       document.getElementById('template-element').children[0].src = el.Poster;
       document.getElementById('template-element').id = el.imdbID;
     }
