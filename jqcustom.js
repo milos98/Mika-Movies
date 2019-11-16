@@ -61,17 +61,17 @@ $('document').ready(function () {
       document.getElementById('template-element').children[0].src = el.Poster;
       document.getElementById('template-element').id = el.imdbID;
     }
-    else if (charData.length <= (comingSoonIMDB.length - 1)){
+    else if (charData.length <= (comingSoonIMDB.length - 1)) {
       newHTML = newHTML.replace('template-element', el.imdbID);
       newHTML = newHTML.replace('%char-img-scr%', el.Poster);
       $('#filmovi').append(newHTML);
     }
     console.log(charData.length === comingSoonIMDB.length)
-for (let el of $('#portfolio-item-caption')) {
-  const randBoja = `rgba(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},0.9)`;
-  el.style.backgroundcolor = randBoja;
-}
+    for (let el of $('#portfolio-item-caption')) {
+      const randBoja = `rgba(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},0.9)`;
+      el.style.backgroundcolor = randBoja;
+    }
   }
 
-getInformation(comingSoonIMDB);
+  getInformation(comingSoonIMDB);
 })

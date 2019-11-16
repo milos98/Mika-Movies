@@ -3,12 +3,16 @@
 
 <head>
     <meta charset="UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mika Movies</title>
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <script src="jqakcija.js"></script>
 </head>
 
 <body>
@@ -29,15 +33,18 @@
         <a href="profil.html"><img src="img/luka.jpg" alt=""></a>
     </nav>
     <main>
-        <div class="filmovi">
-            <div class="akcija">
-                <p>Akcija</p>
-                <article><img src="img/akcija/expendables3.jpg" alt=""></article>
-                <article><img src="img/akcija/endgame.jpg" alt=""></article>
-                <article><img src="img/akcija/inception.jpg" alt=""></article>
-                <article><img src="img/akcija/terminator.jpg" alt=""></article>
+
+
+        <p>Akcija</p>
+        <div class="row" id="filmovi">
+            <div class="slickContent">
+                <div class="charElement" id="template-element">
+                    <img class="img-fluid" src="%char-img-scr%" alt="">
+                </div>
             </div>
-            <div class="drama">
+        </div>
+
+        <!-- <div class="drama">
                 <p>Drama</p>
                 <article><img src="img/drama/batman.jpg" alt=""></article>
                 <article><img src="img/drama/joker.jpg" alt=""></article>
@@ -50,7 +57,7 @@
                 <article><img src="img/horor/devil.jpg" alt=""></article>
                 <article><img src="img/horor/nosferatu.jpg" alt=""></article>
                 <article><img src="img/horor/shining.jpg" alt=""></article>
-            </div>
+            </div> -->
         </div>
     </main>
     <footer>
@@ -59,6 +66,10 @@
             Miloš Janković & Luka Đurđević <br>
             All rights reserved &#169;, 2019</p>
     </footer>
+
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+        
+    </script>
 </body>
 
 </html>
