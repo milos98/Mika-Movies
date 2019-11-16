@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <script src="jqakcija.js"></script>
+    <script src="jqdrama.js"></script>
+    <script src="jqhoror.js"></script>
 </head>
 
 <body>
@@ -34,30 +36,35 @@
     </nav>
     <main>
 
-
-        <p id="zanr">Akcija</p>
-        <div class="row" id="filmovi">
-            <div class="slickContent">
-                <div class="charElement" id="template-element">
-                    <img class="img-fluid" src="%char-img-scr%" alt="">
+        <div class="zanrFilmova" id="akcijaFilmovi">
+            <p id="zanr">Akcija</p>
+            <div class="row" id="filmovi">
+                <div class="slickContent">
+                    <div class="charElement" id="template-element">
+                        <img class="img-fluid" src="%char-img-scr%" alt="">
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- <div class="drama">
-                <p>Drama</p>
-                <article><img src="img/drama/batman.jpg" alt=""></article>
-                <article><img src="img/drama/joker.jpg" alt=""></article>
-                <article><img src="img/drama/pulpfiction.jpg" alt=""></article>
-                <article><img src="img/drama/godfather1.jpg" alt=""></article>
+        <div class="zanrFilmova" id="dramaFilmovi">
+            <p id="zanr">Drama</p>
+            <div class="row" id="filmovi">
+                <div class="slickContent">
+                    <div class="charElement" id="template-element">
+                        <img class="img-fluid" src="%char-img-scr%" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="horor">
-                <p>Horor</p>
-                <article><img src="img/horor/alien.jpg" alt=""></article>
-                <article><img src="img/horor/devil.jpg" alt=""></article>
-                <article><img src="img/horor/nosferatu.jpg" alt=""></article>
-                <article><img src="img/horor/shining.jpg" alt=""></article>
-            </div> -->
+        </div>
+        <div class="zanrFilmova" id="hororFilmovi">
+            <p id="zanr">Horor</p>
+            <div class="row" id="filmovi">
+                <div class="slickContent">
+                    <div class="charElement" id="template-element">
+                        <img class="img-fluid" src="%char-img-scr%" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
@@ -68,7 +75,7 @@
     </footer>
 
     <script type="text/javascript" src="slick/slick.min.js"></script>
-        
+
     </script>
 </body>
 
