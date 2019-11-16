@@ -117,7 +117,15 @@ footer {
 
 /* Za profil stranicu */
 
-main .profilna{
+.profil{
+    text-align: center;
+}
+
+main .profilnaSlika{
+    padding-top: 2%;
+}
+
+main .profilnaSlika img{
     border-radius: 50%;
     display: block;
     margin-top: 4%;
@@ -126,21 +134,25 @@ main .profilna{
     max-width: 20%;
 }
 
-.profil{
-    text-align: center;
+main .korisnickoIme{
+    padding-top: 2%;
+}
+main .imeMail{
+    padding-top: 2%;
 }
 
-.mainText{
+main .mainText{
     color: white;
     font-size: 300%;
 }
 
-.underline{
+main .underline{
     color: whitesmoke;
     font-size: 100%;
 }
 
-.progressBar{
+main .progressBar{
+    margin-top: 2%;
     text-align: right;
     padding-right: 1%;
     color: white;
@@ -150,15 +162,19 @@ main .profilna{
     position: relative;
 }
 
-.progress{
+main .progress{
     text-align: right;
     padding-right: 1%;
     color: white;
     background-color: #EE4540;
     margin-left: 10%;
-    margin-right: 30%;
+    margin-right: 30%;;
 }
 
+main .lozinka{
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
 /* Home btn */
 
 position: absolute;
