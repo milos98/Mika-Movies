@@ -115,6 +115,16 @@ footer {
     padding: 2em 0;
 }
 
+/* Za prikazuje se stranicu */
+
+main #zanr{
+    text-align: center;
+    position: static;
+    padding-top: 2em;
+    color: white;
+    font-size: 30pt;
+}
+
 /* Za profil stranicu */
 
 .profil{
@@ -128,27 +138,27 @@ main .profilnaSlika{
 main .profilnaSlika img{
     border-radius: 50%;
     display: block;
-    margin-top: 4%;
+    margin-top: 5em;
     margin-left: auto;
     margin-right: auto;
     max-width: 20%;
 }
 
 main .korisnickoIme{
-    padding-top: 2%;
+    padding-top: 1em;
 }
 main .imeMail{
-    padding-top: 2%;
+    padding-top: 1em;
 }
 
 main .mainText{
     color: white;
-    font-size: 300%;
+    font-size: 35pt;
 }
 
 main .underline{
     color: whitesmoke;
-    font-size: 100%;
+    font-size: 12pt;
 }
 
 main .progressBar{
