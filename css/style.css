@@ -117,7 +117,7 @@ footer {
 
 /* Za prikazuje se stranicu */
 
-main #zanr{
+main #naslovKategorije{
     text-align: center;
     position: static;
     padding-top: 2em;
