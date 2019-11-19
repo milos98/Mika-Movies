@@ -8,6 +8,7 @@
 
 .active {
     background-color: #EE4540;
+    
 }
 
 .hide {
@@ -126,63 +127,98 @@ main .naslovKategorije{
 
 /* Za profil stranicu */
 
-.profil{
+.profil {
     text-align: center;
+    padding: 2em 0;
 }
 
 main .profilnaSlika{
-    padding-top: 2%;
+    padding-top: 1em;
+    display: flex;
+    justify-content: center;
 }
 
 main .profilnaSlika img{
     border-radius: 50%;
     display: block;
     margin-top: 5em;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 1.3em;
     max-width: 20%;
 }
 
-main .korisnickoIme{
-    padding-top: 1em;
+main #informacijeKorisnik {
+    display: flex;
+    justify-content: center;
+    margin: 0 10vw;
 }
-main .imeMail{
-    padding-top: 1em;
+
+main #informacijeKorisnik div {
+    flex: 1;
 }
 
 main .mainText{
     color: white;
-    font-size: 35pt;
+    padding: 0.1em;
+    font-size: 1.5em;
 }
 
 main .underline{
     color: whitesmoke;
     font-size: 12pt;
+    margin-top: 1em;
+}
+
+main #poeni {
+    margin: 2em 0;
+}
+
+main .progress, main .progressBar {
+    height: 2em;
+    text-align: right;
+    padding-right: 1%;
+    color: white;
+    border-radius: 1em;
+    padding-right: 1em;
 }
 
 main .progressBar{
-    margin-top: 2%;
-    text-align: right;
-    padding-right: 1%;
-    color: white;
+    display: flex;
+    margin-top: 0.5em;
     background-color: #801336;
-    margin-left: 10%;
-    margin-right: 10%;
-    position: relative;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    align-items: center;
 }
 
 main .progress{
-    text-align: right;
-    padding-right: 1%;
-    color: white;
+    display: flex;
     background-color: #EE4540;
-    margin-left: 10%;
-    margin-right: 30%;;
+    margin-right: 20%;
+    flex: 9;
+    align-items: center;
+    justify-content: flex-end;
 }
 
-main .lozinka{
-    margin-top: 2%;
-    margin-bottom: 2%;
+main #buttons {
+    display: flex;
+    justify-content: center;
+    margin: 0 10vw;
+}
+
+main #buttons .buttonsProfile{
+    margin: 1.8em 0;
+    padding: 1.5em;
+    border: 0;
+    border-radius: 2em;
+    background-color: #EE4540;
+    color: white;
+    font-weight: bold;
+    flex: 1;
+}
+
+main #buttons .buttonsProfile:nth-child(2) {
+    margin-left: 1.8em;
+    margin-right: 1.8em;
 }
 /* Home btn */
 
