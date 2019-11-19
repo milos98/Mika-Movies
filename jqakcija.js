@@ -9,23 +9,26 @@ $('document').ready(function () {
             let response = await fetch(`http://www.omdbapi.com/?apikey=b6e0271a&i=${IMDBcode}`, {});
             let json = await response.json();
             charData.push(json);
+            console.log(json.Genre)
         };
         return charData;
     }
 
     function populate(filmovi, klasa) {
         let film = document.getElementById(klasa).childNodes[3].childNodes[1].childNodes[1];
+        let newMatch = new RegExp(klasa, "gi")
         //console.log(film)
         filmovi.forEach((el) => {
-            let newHTML = film.cloneNode(true);
-            newHTML.id = el.imdbID;
-            newHTML.children[0].src = el.Poster;
-            console.log(newHTML)
-            document.getElementById(klasa).childNodes[3].childNodes[1].appendChild(newHTML);
-            //let Genre = el.Genre.match(newMatch);
-            
+            let genreMatch = el.Genre.match(newMatch);
+            if (genreMatch) {
+                let newHTML = film.cloneNode(true);
+                newHTML.id = el.imdbID;
+                newHTML.children[0].src = el.Poster;
+                console.log()
+                document.getElementById(klasa).childNodes[3].childNodes[1].appendChild(newHTML);
+            }
         })
-        console.log(document.getElementById(klasa).childNodes[3].children[0]);
+        console.log();
     }
 
     async function createCharacter(listaFilmova) {
@@ -36,41 +39,8 @@ $('document').ready(function () {
             populate(filmoviJSON, klasa);
             $('#template-element').remove();
             console.log("ccc")
-            /*$('#filmovi').slick({
-                centerMode: true,
-                dots: true,
-                centerPadding: '60px',
-                slidesToShow: 3,
-                swipeToSlide: true,
-                appendArrows: $('.row'),
-                mobileFirst: true,
-                variableWidth: true,
-                responsive: [
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            arrows: true,
-                            centerMode: true,
-                            centerPadding: '40px',
-                            swipeToSlide: true,
-                            variableWidth: true,
-                            slidesToShow: 3
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            arrows: false,
-                            centerMode: true,
-                            centerPadding: '40px',
-                            swipeToSlide: true,
-                            variableWidth: true,
-                            slidesToShow: 1
-                        }
-                    }
-                ]
-            })*/
-        }}
+        }
+    }
 
-        createCharacter(IMDBids);
-    })
+    createCharacter(IMDBids);
+})

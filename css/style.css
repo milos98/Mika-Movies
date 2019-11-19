@@ -85,7 +85,6 @@ main #filmovi {
     padding-top: 50px;
     height: 33em;
     display: flex;
-
 }
 
 main .row img {
@@ -117,7 +116,7 @@ footer {
 
 /* Za prikazuje se stranicu */
 
-main #naslovKategorije{
+main .naslovKategorije{
     text-align: center;
     position: static;
     padding-top: 2em;
