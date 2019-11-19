@@ -38,7 +38,7 @@ $('document').ready(function () {
             let klasa = genreList[i].id;
             populate(filmoviJSON, klasa);
             $('#template-element').remove();
-            console.log("ccc")
+            console.log()
         }
     }
 
