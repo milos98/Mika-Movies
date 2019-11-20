@@ -46,9 +46,8 @@ nav ul {
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
     padding: 1.5em 2em;
-    float: left;
 }
 
 nav ul li:hover{
@@ -68,8 +67,8 @@ main {
 main .dobrodosli {
     height: 40vh;
     max-width: 100%;
-    background-image: url(/img/cinema-crop.jpg);
-    background-position: center;
+    background-image: url(/img/karen-zhao-jLRIsfkWRGo-unsplash1c.jpg);
+    background-size: cover;
     color: white;
     display: flex;
     align-items: center;
@@ -124,6 +123,32 @@ main .naslovKategorije{
     color: white;
     font-size: 30pt;
 }
+
+/* Za uskoro stranicu */
+
+main form {
+    padding: 2em 20vw;
+    display: flex;
+    flex-direction: column;
+}
+
+main form .redForma {
+    
+    width: 50%;
+    justify-content: flex-start;
+
+}
+
+main form .redForma .poljeForma {
+    flex: 1;
+    display: inline-flex;
+    padding: 2em;
+}
+
+main form button {
+    width: 100%;
+}
+
 
 /* Za profil stranicu */
 
