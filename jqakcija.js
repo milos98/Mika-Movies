@@ -1,6 +1,7 @@
 $('document').ready(function () {
 
-    var IMDBids = ['tt1950186', 'tt6450804', 'tt7286456', 'tt1560220', 'tt7390646']
+    var IMDBids = ['tt1950186', 'tt6450804', 'tt7286456', 'tt1560220', 'tt7390646', 'tt4520988', 'tt3224458', 'tt8688634', 'tt9071322', 'tt10703826',
+    'tt8106572', 'tt9358256', 'tt8946378', 'tt8722346']
 
     async function makeArrayOfData(e) {
         let charData = [];
