@@ -11,7 +11,7 @@
 }
 
 nav div {
-    display: inline;
+    display: inline-block;
     width: 1em;
     height: 1em;
 }
@@ -417,97 +417,3 @@ main #buttons .buttonsProfile:nth-child(2) {
     }
 
 }
-
-/* Home btn */
-
-position: absolute;
-width: 200px;
-height: 110px;
-
-
-/* Slajder pozadina */
-
-position: absolute;
-width: 1920px;
-height: 340px;
-left: 0px;
-top: 512px;
-
-background: #801336;
-
-
-/* Group 1 */
-
-position: absolute;
-width: 1870px;
-height: 250px;
-left: 24px;
-top: 557px;
-
-
-
-/* Group 2 */
-
-position: absolute;
-width: 1870px;
-height: 250px;
-left: 25px;
-top: 985px;
-
-box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.25);
-
-
-/* Rectangle 1 */
-
-position: absolute;
-width: 1920px;
-height: 294px;
-left: 0px;
-top: 1368px;
-
-background: #EE4540;
-
-
-/* Dobrodošli u ... bioskop */
-
-position: absolute;
-width: 338px;
-height: 42px;
-left: 231px;
-top: 257px;
-
-
-
-color: #EE4540;
-
-/* Prikazuje se btn */
-
-position: absolute;
-width: 200px;
-height: 110px;
-left: 860px;
-top: 0px;
-
-
-
-/* Uskoro btn */
-
-position: absolute;
-width: 200px;
-height: 110px;
-left: 1110px;
-top: 0px;
-
-
-
-/* Profil btn */
-
-position: absolute;
-width: 80px;
-height: 80px;
-left: 1800px;
-top: 15px;
-
-background: url(IGGY8591.jpg), #C4C4C4;
-border: 7px solid #801336;
-
