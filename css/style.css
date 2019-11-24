@@ -6,13 +6,29 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-.active {
-    background-color: #EE4540;
-    
+li.active {
+    background-color: #EE4540;  
+}
+
+img.active {
+    border: 100px #EE4540 !important;
 }
 
 .hide {
     display: none;
+}
+
+nav div {
+    display: inline;
+    width: 1em;
+    height: 1em;
+}
+
+.fa-bars {
+    display: none;
+    font-size: 2em;
+    color: white;
+    transform: translate(50%, 50%);
 }
 
 nav {
@@ -30,6 +46,18 @@ nav .navigacija{
     display: inline-block;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.navigacija ul {
+    margin-top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navigacija ul li {
+    width: 5em;
+    text-align: center;
 }
 
 nav img {
@@ -67,7 +95,7 @@ main {
 main .dobrodosli {
     height: 40vh;
     max-width: 100%;
-    background-image: url(../img/karen-zhao-jLRIsfkWRGo-unsplash1c.jpg);
+    background-image: url(/img/karen-zhao-jLRIsfkWRGo-unsplash1c.jpg);
     background-size: cover;
     color: white;
     display: flex;
@@ -97,9 +125,7 @@ main .row img {
 
 div .charElement {
     display: inline-block !important;
-    box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 50px;
-
+    padding: 0.5em;
 }
 
 footer {
@@ -116,12 +142,24 @@ footer {
 
 /* Za prikazuje se stranicu */
 
+main #zanr {
+    padding: 2em 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+main #zanr .row .charElement {
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
 
 main .naslovKategorije{
     text-align: center;
     position: static;
     padding-top: 2em;
+    padding-bottom: 1em;
     color: white;
     font-size: 30pt;
 }
@@ -155,32 +193,29 @@ main form button {
 /* Za profil stranicu */
 
 .profil {
-    text-align: center;
     padding: 2em 0;
 }
 
 main .profilnaSlika{
     padding-top: 1em;
-    display: flex;
-    justify-content: center;
+    display: block;
 }
 
 main .profilnaSlika img{
     border-radius: 50%;
-    display: block;
-    margin-top: 5em;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 3em;
     margin-bottom: 1.3em;
     max-width: 20%;
 }
 
 main #informacijeKorisnik {
+    text-align: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     margin: 0 10vw;
-}
-
-main #informacijeKorisnik div {
-    flex: 1;
 }
 
 main .mainText{
@@ -190,6 +225,7 @@ main .mainText{
 }
 
 main .underline{
+    text-align: center;
     color: whitesmoke;
     font-size: 12pt;
     margin-top: 1em;
@@ -250,12 +286,44 @@ main #buttons .buttonsProfile:nth-child(2) {
 
 @media only screen and (max-width: 756px) {
 
+    /* za meni */
+    .fa-bars {
+        display: inline-block!important;
+    }
+
+    .fa-bars:hover {
+        cursor: pointer;
+    }
+    
+    .menuClicked {
+        height: 16.5em;
+    }
+
+    .navigacija ul {
+        margin-top: 4em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: stretch;
+    }
+
+    .navigacija ul li {
+        width: 100vw;
+        text-align: center;
+    }
+
+    /* za index */
+    .dobrodosli {
+        justify-content: center;
+    }
+
+    /* za profilnu stranicu */
     #informacijeKorisnik {
-        display: block !important;
+        flex-direction: column;
     }
     
     .username, .email, .name {
-        display: block;
+        padding: 0;
     }
 
     #buttons {
