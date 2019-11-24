@@ -67,7 +67,7 @@ main {
 main .dobrodosli {
     height: 40vh;
     max-width: 100%;
-    background-image: url(/img/karen-zhao-jLRIsfkWRGo-unsplash1c.jpg);
+    background-image: url(../img/karen-zhao-jLRIsfkWRGo-unsplash1c.jpg);
     background-size: cover;
     color: white;
     display: flex;

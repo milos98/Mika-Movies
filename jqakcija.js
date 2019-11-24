@@ -7,7 +7,7 @@ $('document').ready(function () {
         let charData = [];
         for (let i = 0; i < e.length; i++) {
             let IMDBcode = e[i];
-            let response = await fetch(`http://www.omdbapi.com/?apikey=b6e0271a&i=${IMDBcode}`, {});
+            let response = await fetch(`https://www.omdbapi.com/?apikey=b6e0271a&i=${IMDBcode}`, {});
             let json = await response.json();
             charData.push(json);
             console.log(json.Genre)
