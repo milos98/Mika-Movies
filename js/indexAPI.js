@@ -66,11 +66,6 @@ $('document').ready(function () {
       newHTML = newHTML.replace('%char-img-scr%', el.Poster);
       $('#filmovi').append(newHTML);
     }
-    console.log(charData.length === comingSoonIMDB.length)
-    for (let el of $('#portfolio-item-caption')) {
-      const randBoja = `rgba(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},0.9)`;
-      el.style.backgroundcolor = randBoja;
-    }
   }
 
   getInformation(comingSoonIMDB);  
