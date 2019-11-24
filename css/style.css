@@ -118,7 +118,7 @@ main #filmovi {
 main .row img {
     position: relative;
     height: 24em;
-    width: 250px;
+    width: 15.5em;
     flex-grow: 10;
     border-radius: 50px;
 }
@@ -359,6 +359,29 @@ main #buttons .buttonsProfile:nth-child(2) {
     /* za index */
     .dobrodosli {
         justify-content: center;
+    }
+
+    /* za prikazujeSe*/
+    main #zanr {
+        padding: 2em 5em;
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    main #zanr img{
+        height: 13em;
+        width: 8.5em;
+    }
+    
+    main .naslovKategorije{
+        text-align: center;
+        position: static;
+        padding-top: 2em;
+        padding-bottom: 1em;
+        color: white;
+        font-size: 30pt;
     }
 
     /* za uskoro */
