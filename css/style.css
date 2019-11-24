@@ -144,15 +144,17 @@ footer {
 
 main #zanr {
     padding: 2em 5em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-main #zanr .row .charElement {
-    flex: 1;
+main #zanr div.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
 }
 
 main .naslovKategorije{
@@ -166,27 +168,65 @@ main .naslovKategorije{
 
 /* Za uskoro stranicu */
 
+.uskoro {
+    margin-top: 3em;
+}
+
+main .contact {
+    padding: 2em 0;
+    display: flex;
+    justify-content: center;
+}
+
 main form {
-    padding: 2em 20vw;
+    background: #EE4540;
+    padding: 1em;
     display: flex;
     flex-direction: column;
+    border-radius: 2em;
+    margin: 0 10vw;
 }
 
 main form .redForma {
-    
-    width: 50%;
-    justify-content: flex-start;
-
+    display: flex;
 }
 
 main form .redForma .poljeForma {
     flex: 1;
+    display: flex;
+    flex-direction: column;
     display: inline-flex;
-    padding: 2em;
+    padding: 1em;
 }
 
-main form button {
-    width: 100%;
+main form .redForma .poljeForma label {
+    margin-bottom:5px;
+    color: #FFFFFF;
+    font-size: 1.5em;
+}
+
+main form .redForma .poljeForma input {
+    border-radius: 50px;
+    font-size: 1.5em;
+    border: 0;
+}
+
+main form .check, .checkB {
+    font-size: 1.2em;
+    color: #FFFFFF;
+    padding: 1em 1em 0 1em;
+}
+
+main form .check input {
+    margin-left: 1em;
+}
+
+main .forma #posalji {
+    padding: 0.5em;
+    margin: 1em;
+    border-radius: 50px;
+    font-size: 1.5em;
+    border: 0;
 }
 
 
@@ -216,6 +256,10 @@ main #informacijeKorisnik {
     display: flex;
     justify-content: space-around;
     margin: 0 10vw;
+}
+
+main #informacijeKorisnik div {
+    flex: 1;
 }
 
 main .mainText{
@@ -315,6 +359,12 @@ main #buttons .buttonsProfile:nth-child(2) {
     /* za index */
     .dobrodosli {
         justify-content: center;
+    }
+
+    /* za uskoro */
+    main form .redForma {
+        display: flex;
+        flex-direction: column;
     }
 
     /* za profilnu stranicu */
