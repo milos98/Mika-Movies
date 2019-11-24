@@ -7,7 +7,7 @@ $('document').ready(function () {
 
   function getInformation(listaIMDBkodova) {
     listaIMDBkodova.forEach(function (IMDBcode) {
-      fetch(`http://www.omdbapi.com/?apikey=b6e0271a&i=${IMDBcode}`)
+      fetch(`https://www.omdbapi.com/?apikey=b6e0271a&i=${IMDBcode}`)
         .then((resp) => resp.json())
         .then(function (el) {
           charData.push(el);
