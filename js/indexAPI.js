@@ -3,7 +3,9 @@ $('document').ready(function () {
   var charData = [];
   var nowInTheater = ['']
   var comingSoonIMDB = ['tt4520988', 'tt3224458', 'tt8688634', 'tt9071322', 'tt10703826',
-    'tt8106572', 'tt9358256', 'tt8946378', 'tt8722346']
+    'tt8106572', 'tt9358256', 'tt8946378', 'tt8722346',
+    'tt6924650', 'tt5033998', 'tt9134216', 'tt8623904', 'tt5606664',
+    'tt5563334', 'tt7286456', 'tt4777008', 'tt4648786']
 
   function getInformation(listaIMDBkodova) {
     listaIMDBkodova.forEach(function (IMDBcode) {
@@ -56,14 +58,14 @@ $('document').ready(function () {
 
   function createCharacter(el) {
     var film = $('.charElement').prop('outerHTML');
-    let newHTML = film.replace('template-element', el.imdbID);
+    var newHTML = film.replace('template-element', el.imdbID);
     if (charData.length === comingSoonIMDB.length) {
       document.getElementById('template-element').children[0].src = el.Poster;
       document.getElementById('template-element').id = el.imdbID;
     }
     else if (charData.length <= (comingSoonIMDB.length - 1)) {
       newHTML = newHTML.replace('template-element', el.imdbID);
-      newHTML = newHTML.replace('%char-img-scr%', el.Poster);
+      newHTML = newHTML.replace('#', el.Poster);
       $('#filmovi').append(newHTML);
     }
   }
