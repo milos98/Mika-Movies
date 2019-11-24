@@ -116,6 +116,8 @@ footer {
 
 /* Za prikazuje se stranicu */
 
+
+
 main .naslovKategorije{
     text-align: center;
     position: static;
@@ -245,6 +247,29 @@ main #buttons .buttonsProfile:nth-child(2) {
     margin-left: 1.8em;
     margin-right: 1.8em;
 }
+
+@media only screen and (max-width: 756px) {
+
+    #informacijeKorisnik {
+        display: block !important;
+    }
+    
+    .username, .email, .name {
+        display: block;
+    }
+
+    #buttons {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main #buttons .buttonsProfile:nth-child(2) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
+
 /* Home btn */
 
 position: absolute;
