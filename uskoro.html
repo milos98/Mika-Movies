@@ -22,6 +22,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- custom JS -->
+    <script src="./js/validation.js"></script>
     <script src="./js/indexAPI.js"></script>
     <script src="./js/custom.js"></script>
 
@@ -46,38 +47,54 @@
         <a href="profil.html"><img src="img/luka.jpg" alt=""></a>
     </nav>
     <main>
-        <div class="row" id="filmovi">
+        <div class="row uskoro" id="filmovi">
             <div class="slickContent">
                 <div class="charElement" id="template-element">
                     <img class="img-fluid" src="%char-img-scr%" alt="">
                 </div>
             </div>
         </div>
-        <form class="forma">
-            <div class="redForma">
-                <div class="poljeForma">
-                    <label for="firstName">Ime</label>
-                    <input type="text" name="firstName">
+        <div class="contact">
+            <form name="newsletter" class="forma" onsubmit="return validateForm()">
+                <div class="redForma">
+                    <div class="poljeForma">
+                        <label>Ime</label>
+                        <input type="text" name="firstName">
+                    </div>
+                    <div class="poljeForma">
+                        <label>Prezime</label>
+                        <input type="text" name="lastName">
+                    </div>
                 </div>
-                <div class="poljeForma">
-                    <label for="lastName">Prezime</label>
-                    <input type="text" name="lastName">
+                <div class="redForma">
+                    <div class="poljeForma">
+                        <label>Email</label>
+                        <input type="email" name="email">
+                    </div>
+                    <div class="poljeForma">
+                        <label>Telefon</label>
+                        <input type="tel" name="phone"
+                                title="Broj telefona mora biti unet u formatu: +38x6yz..."
+                                pattern="^(?:\(?\+38\)?\s?)[1-9][60-69](?:[\.\-\s]?\d\d){3}(?:[\.\-\s]?\d)(?:\d?)$">
+                    </div>
                 </div>
-            </div>
-            <div class="redForma">
-                <div class="poljeForma">
-                    <label for="email">Email</label>
-                    <input type="email" name="firstName">
+                <div class="check">
+                    <label for="">Želim da primam obaveštenja jednom </label>
+                    <br>
+                    <input type="radio" name="period" id="dnevno"><label for="dnevno">dnevno</label>
+                    <br>
+                    <input type="radio" name="period" id="nedeljno"><label for="nedeljno">nedeljno</label>
+                    <br>
+                    <input type="radio" name="period" id="mesecno"><label for="mesecno">mesecno</label>
                 </div>
-                <div class="poljeForma">
-                    <label for="phone">Telefon</label>
-                    <input type="tel" name="firstName">
-                </div>
-            </div>
+                <div class="checkB">
+                        <input type="checkbox" name="GDPR" id="GDPR"><label for="GDPR">Slažem se da se moji podaci koje sam naveo u formi koriste u promotivne kampanje.</label>
+                    </div>
 
-            <button type="submit">Prijavi se na newslettsr</button>
+                <input type="submit" id="posalji" value="Prijavi se na newsletter">
 
-        </form>
+            </form>
+        </div>
     </main>
     <footer>
         <p>Mika Movies<br>
