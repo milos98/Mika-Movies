@@ -1,7 +1,6 @@
 $('document').ready(function () {
 
   var charData = [];
-  var nowInTheater = ['']
   var comingSoonIMDB = ['tt4520988', 'tt3224458', 'tt8688634', 'tt9071322', 'tt10703826',
     'tt8106572', 'tt9358256', 'tt8946378', 'tt8722346',
     'tt6924650', 'tt5033998', 'tt9134216', 'tt8623904', 'tt5606664',
