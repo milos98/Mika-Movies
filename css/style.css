@@ -140,25 +140,23 @@ footer {
 /* Za prikazuje se stranicu */
 
 main #zanr {
-    padding: 2em 5em;
-    display: block;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    padding: 0 5em;
 }
 
-main #zanr div.row {
+main #zanr div.row div.slickContent {
+    margin: 0 1em;
+    padding: 2em 0;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    text-align: center;
+    justify-content: center !important;
     flex-wrap: wrap;
-    margin: 0 auto;
 }
 
 main #zanr div.row .charElement {
     flex: 1;
     display: inline;
-    padding: 0 0.5em;
+    padding: 1em 1em;
 }
 
 main .naslovKategorije{
@@ -369,7 +367,7 @@ main #buttons .buttonsProfile:nth-child(2) {
 
     /* za prikazujeSe*/
     main #zanr {
-        padding: 2em 5em;
+        padding: 2em 2em;
         display: flex;
         flex-direction: column;
         position: relative;
