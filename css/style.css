@@ -302,8 +302,8 @@ main .progressBar{
 main .progress{
     display: flex;
     background-color: #EE4540;
-    margin-right: 20%;
-    flex: 9;
+    margin-right: 12%;
+    flex: 10;
     align-items: center;
     justify-content: flex-end;
 }
